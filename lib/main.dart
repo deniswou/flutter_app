@@ -10,13 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter App',
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Componentes', style: TextStyle(color: Colors.white)),
-          backgroundColor: Colors.blue,
-        ),
-        body: HomePageTemp(),
-      ),
+      home: HomePageTemp(),
     );
   }
 }
