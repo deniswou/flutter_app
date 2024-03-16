@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/src/provider/menu_provider.dart';
 
+import '../utils/icono_string_util.dart';
+
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -32,7 +34,7 @@ List<Widget> _listaItems(List<dynamic> data) {
   data.forEach((opt){
     final widgetTemp = ListTile(
       title: Text(opt['texto']),
-      leading: Icon(Icons.account_circle, color: Colors.blue),
+      leading: getIcon(opt['icon']),
       trailing: Icon(Icons.keyboard_arrow_right, color: Colors.blue),
       onTap: (){
 
